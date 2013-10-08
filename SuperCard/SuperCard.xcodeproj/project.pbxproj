@@ -21,6 +21,7 @@
 		3643F57F1803F902006AE1CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3643F5611803F902006AE1CB /* UIKit.framework */; };
 		3643F5871803F902006AE1CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3643F5851803F902006AE1CB /* InfoPlist.strings */; };
 		3643F5891803F902006AE1CB /* SuperCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3643F5881803F902006AE1CB /* SuperCardTests.m */; };
+		3643F5941803FB30006AE1CB /* PlayingCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3643F5931803FB30006AE1CB /* PlayingCardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		3643F5841803F902006AE1CB /* SuperCardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperCardTests-Info.plist"; sourceTree = "<group>"; };
 		3643F5861803F902006AE1CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3643F5881803F902006AE1CB /* SuperCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperCardTests.m; sourceTree = "<group>"; };
+		3643F5921803FB30006AE1CB /* PlayingCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardView.h; sourceTree = "<group>"; };
+		3643F5931803FB30006AE1CB /* PlayingCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				3643F56C1803F902006AE1CB /* SuperCardAppDelegate.h */,
 				3643F56D1803F902006AE1CB /* SuperCardAppDelegate.m */,
 				3643F56F1803F902006AE1CB /* Main.storyboard */,
+				3643F5921803FB30006AE1CB /* PlayingCardView.h */,
+				3643F5931803FB30006AE1CB /* PlayingCardView.m */,
 				3643F5721803F902006AE1CB /* SuperCardViewController.h */,
 				3643F5731803F902006AE1CB /* SuperCardViewController.m */,
 				3643F5751803F902006AE1CB /* Images.xcassets */,
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3643F56E1803F902006AE1CB /* SuperCardAppDelegate.m in Sources */,
+				3643F5941803FB30006AE1CB /* PlayingCardView.m in Sources */,
 				3643F56A1803F902006AE1CB /* main.m in Sources */,
 				3643F5741803F902006AE1CB /* SuperCardViewController.m in Sources */,
 			);
