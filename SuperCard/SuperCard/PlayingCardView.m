@@ -73,6 +73,22 @@
     textBound.origin = CGPointMake(2.0, 2.0);
     textBound.size = [cornerText size];
     [cornerText drawInRect:textBound];
+    [self saveContextAndRotateUpsideDown];
+    [cornerText drawInRect:textBound];
+    [self restoreContext];
+}
+
+- (void)saveContextAndRotateUpsideDown
+{
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, self.bounds.size.width, self.bounds.size.height);
+    CGContextRotateCTM(context, M_PI);
+}
+
+- (void)restoreContext
+{
+    CGContextRestoreGState(UIGraphicsGetCurrentContext());
 }
 
 @end
