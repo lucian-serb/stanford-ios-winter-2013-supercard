@@ -24,6 +24,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.11153020098198807" green="0.65626992984693877" blue="0.11090549256956708" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="playingCardView" destination="X0J-px-9h2" id="uuG-Nj-Tcv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

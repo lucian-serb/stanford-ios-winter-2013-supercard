@@ -7,8 +7,11 @@
 //
 
 #import "SuperCardViewController.h"
+#import "PlayingCardView.h"
 
 @interface SuperCardViewController ()
+
+@property (weak, nonatomic) IBOutlet PlayingCardView *playingCardView;
 
 @end
 
