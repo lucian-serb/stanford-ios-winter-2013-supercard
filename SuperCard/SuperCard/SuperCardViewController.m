@@ -29,4 +29,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)setPlayingCardView:(PlayingCardView *)playingCardView
+{
+    _playingCardView = playingCardView;
+    playingCardView.rank = 13; // K
+    playingCardView.suit = @"♥";
+}
+
 @end
