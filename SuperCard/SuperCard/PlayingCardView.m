@@ -10,6 +10,24 @@
 
 @implementation PlayingCardView
 
+- (void)setRank:(NSUInteger)rank
+{
+    _rank = rank;
+    [self setNeedsDisplay];
+}
+
+- (void)setSuit:(NSString *)suit
+{
+    _suit = suit;
+    [self setNeedsDisplay];
+}
+
+- (void)setFaceUp:(BOOL)faceUp
+{
+    _faceUp = faceUp;
+    [self setNeedsDisplay];
+}
+
 - (void)setup
 {
     // do initialization here
