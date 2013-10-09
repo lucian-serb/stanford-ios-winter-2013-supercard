@@ -49,22 +49,31 @@
 {
     UIBezierPath *roundedRect = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:12.0];
     [roundedRect addClip];
-    [[UIColor whiteColor] setFill];
-    [roundedRect fill];
     // this also works because even thow we fill the entire view, it is clipped to the rounded rect
     // UIRectFill(self.bounds);
-    [[UIColor blackColor] setStroke];
-    [roundedRect stroke];
-    UIImage *faceImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@.png", [self rankAsString], self.suit]];
-    
-    if (faceImage) {
-        CGRect imageRect = CGRectInset(self.bounds, self.bounds.size.width * (1.0 - 0.8), self.bounds.size.height * (1.0 - 0.8));
-        [faceImage drawInRect:imageRect];
-    } else {
+    if (self.faceUp) {
+        [[UIColor whiteColor] setFill];
+        [roundedRect fill];
+        UIImage *faceImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@.png", [self rankAsString], self.suit]];
         
+        if (faceImage) {
+            CGRect imageRect = CGRectInset(self.bounds, self.bounds.size.width * (1.0 - 0.8), self.bounds.size.height * (1.0 - 0.8));
+            [faceImage drawInRect:imageRect];
+        } else {
+            
+        }
+        
+        [self drawCorners];
+    } else {
+        [[UIColor brownColor] setFill];
+        [roundedRect fill];
+        UIImage *faceImage = [UIImage imageNamed:@"cardback.png"];
+        CGRect imageRect = CGRectInset(self.bounds, self.bounds.size.width * (1.0 - 0.95), self.bounds.size.height * (1.0 - 0.85));
+        [faceImage drawInRect:imageRect];
     }
     
-    [self drawCorners];
+    [[UIColor blackColor] setStroke];
+    [roundedRect stroke];
 }
 
 - (NSString *)rankAsString
