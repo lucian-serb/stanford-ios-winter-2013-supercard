@@ -36,4 +36,13 @@
     playingCardView.suit = @"♥";
 }
 
+- (IBAction)swipe:(UISwipeGestureRecognizer *)sender
+{
+    [UIView transitionWithView:self.playingCardView
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionFlipFromLeft
+                    animations:^{self.playingCardView.faceUp = !self.playingCardView.faceUp;}
+                    completion:NULL];
+}
+
 @end

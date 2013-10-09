@@ -20,6 +20,10 @@
                                 <rect key="frame" x="70" y="144" width="180" height="280"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Wk9-8v-oDb" appends="YES" id="RKi-ps-X7m"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.11153020098198807" green="0.65626992984693877" blue="0.11090549256956708" alpha="1" colorSpace="calibratedRGB"/>
@@ -29,6 +33,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Wk9-8v-oDb">
+                    <connections>
+                        <action selector="swipe:" destination="vXZ-lx-hvc" id="Mx9-Re-HwS"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
         </scene>
     </scenes>
