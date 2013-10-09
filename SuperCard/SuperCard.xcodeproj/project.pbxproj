@@ -46,6 +46,8 @@
 		36DA39DD18055BC000DC09B9 /* Q♥@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36DA39C518055BC000DC09B9 /* Q♥@2x.png */; };
 		36DA39DE18055BC000DC09B9 /* Q♦.png in Resources */ = {isa = PBXBuildFile; fileRef = 36DA39C618055BC000DC09B9 /* Q♦.png */; };
 		36DA39DF18055BC000DC09B9 /* Q♦@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36DA39C718055BC000DC09B9 /* Q♦@2x.png */; };
+		36DA39E218056C7A00DC09B9 /* cardback.png in Resources */ = {isa = PBXBuildFile; fileRef = 36DA39E018056C7A00DC09B9 /* cardback.png */; };
+		36DA39E318056C7A00DC09B9 /* cardback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36DA39E118056C7A00DC09B9 /* cardback@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,8 @@
 		36DA39C518055BC000DC09B9 /* Q♥@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Q♥@2x.png"; path = "SuperCard/Resources/Q♥@2x.png"; sourceTree = "<group>"; };
 		36DA39C618055BC000DC09B9 /* Q♦.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Q♦.png"; path = "SuperCard/Resources/Q♦.png"; sourceTree = "<group>"; };
 		36DA39C718055BC000DC09B9 /* Q♦@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Q♦@2x.png"; path = "SuperCard/Resources/Q♦@2x.png"; sourceTree = "<group>"; };
+		36DA39E018056C7A00DC09B9 /* cardback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardback.png; path = SuperCard/Resources/cardback.png; sourceTree = "<group>"; };
+		36DA39E118056C7A00DC09B9 /* cardback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cardback@2x.png"; path = "SuperCard/Resources/cardback@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +213,8 @@
 		36DA39AF18055B9C00DC09B9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				36DA39E018056C7A00DC09B9 /* cardback.png */,
+				36DA39E118056C7A00DC09B9 /* cardback@2x.png */,
 				36DA39B018055BC000DC09B9 /* J♠.png */,
 				36DA39B118055BC000DC09B9 /* J♠@2x.png */,
 				36DA39B218055BC000DC09B9 /* J♣.png */,
@@ -320,7 +326,9 @@
 				36DA39C918055BC000DC09B9 /* J♠@2x.png in Resources */,
 				36DA39D618055BC000DC09B9 /* K♦.png in Resources */,
 				36DA39D518055BC000DC09B9 /* K♥@2x.png in Resources */,
+				36DA39E218056C7A00DC09B9 /* cardback.png in Resources */,
 				36DA39CF18055BC000DC09B9 /* J♦@2x.png in Resources */,
+				36DA39E318056C7A00DC09B9 /* cardback@2x.png in Resources */,
 				36DA39D218055BC000DC09B9 /* K♣.png in Resources */,
 				3643F5761803F902006AE1CB /* Images.xcassets in Resources */,
 				36DA39CD18055BC000DC09B9 /* J♥@2x.png in Resources */,
