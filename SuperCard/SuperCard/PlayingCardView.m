@@ -159,7 +159,7 @@
 {
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.alignment = NSTextAlignmentCenter;
-    UIFont *cornerFont = [UIFont systemFontOfSize:self.bounds.size.width * 0.20];
+    UIFont *cornerFont = [UIFont systemFontOfSize:self.bounds.size.width * PIP_FONT_SCALE_FACTOR];
     NSAttributedString *cornerText = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@\n%@", self.rankAsString, self.suit] attributes:@{NSParagraphStyleAttributeName: paragraphStyle, NSFontAttributeName: cornerFont}];
     CGRect textBound;
     textBound.origin = CGPointMake(2.0, 2.0);
