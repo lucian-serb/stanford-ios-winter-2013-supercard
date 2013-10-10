@@ -134,7 +134,7 @@
             CGRect imageRect = CGRectInset(self.bounds, self.bounds.size.width * (1.0 - 0.8), self.bounds.size.height * (1.0 - 0.8));
             [faceImage drawInRect:imageRect];
         } else {
-            
+            [self drawPips];
         }
         
         [self drawCorners];
