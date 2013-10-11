@@ -208,4 +208,12 @@
     CGContextRestoreGState(UIGraphicsGetCurrentContext());
 }
 
+- (void)pinch:(UIPinchGestureRecognizer *)recognizer
+{
+    if ((recognizer.state == UIGestureRecognizerStateChanged) || (recognizer.state == UIGestureRecognizerStateEnded)) {
+        self.faceCardScaleFactor *= recognizer.scale;
+        recognizer.scale = 1;
+    }
+}
+
 @end
